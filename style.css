@@ -172,7 +172,6 @@ nav {
     padding: 50px 40px;
     transition: all 0.3s;
     background: #fff;
-    overflow-y: scroll;
     box-sizing: border-box;
     transform: translateX(-295px);
     transition-duration: 0.5s;
