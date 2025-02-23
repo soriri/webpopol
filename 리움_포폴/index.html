@@ -1,0 +1,409 @@
+<html>
+    <head>
+        <title>Example</title>
+        <meta charset="UTF-8"/>
+        <link rel="stylesheet" href="./style.css"/>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+        <style>
+            .swiper {
+                width: 100%;
+                height: 100%;
+            }
+
+            .swiper-slide {
+                text-align: center;
+                font-size: 18px;
+                background: #fff;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 0 15px;
+                box-sizing: border-box;
+
+            }
+
+            .swiper-slide img {
+                display: block;
+                height: 440px;
+                object-fit: cover;
+                margin-bottom: 80px;
+                transition: all 0.3s;
+            }
+            .swiper-button-next,
+            .swiper-button-prev {
+                background-color: #fff;
+                opacity: 0.5;
+                padding: 15px 5px;
+                border-radius: 20px;
+                color: black !important;
+            }
+            .swiper-button-next:after,
+            .swiper-button-prev:after {
+                font-size: 1.1rem !important;
+                font-weight: 600 !important;
+            }
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <div id="i_header_container">
+                <div class="m_side_btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <a href="/index.html">
+                    <img
+                        src="https://www.leeumstore.org/wib/img/logo-main.gif"
+                        alt="리움스토어"
+                        class="main_logo">
+
+                </a>
+                <div class="right_menu_btn">
+                    <a
+                        href="https://www.leeumstore.org/member/login.html?noMemberOrder&returnUrl=%2Fmyshop%2Forder%2Flist.html">
+                        <img src="https://www.leeumstore.org/wib/img/icon/icon_login.svg" alt="로그인">
+                    </a>
+                    <a href="https://www.leeumstore.org/order/basket.html">
+                        <img src="https://www.leeumstore.org/wib/img/icon/icon_cart.svg" alt="장바구니">
+                    </a>
+                </div>
+
+            </div>
+            <!-- 사이드 -->
+            <nav>
+                <div class="close_btn"><img src="https://www.leeumstore.org/wib/img/icon/icon_close.svg"></div>
+
+                <ul>
+                    <li>
+                        <a href="/index.html">LEEUM STORE</a>
+                    </li>
+                    <li>
+                        <a href="/product/list.html?cate_no=42">PRODUCT</a>
+                    </li>
+                    <li>
+                        <a href="/member/agreement.html">EVENT</a>
+                    </li>
+                    <li>
+                        <a href="/member/agreement.html">SPACE</a>
+                    </li>
+                    <li>
+                        <a href="#none">SEARCH</a>
+                    </li>
+                    <li>
+                        <a href="http://www.leeum.org/" target="_balnk">LEEUM</a>
+                    </li>
+
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="main_container">
+
+                <div class="main_banner">
+                    <a href="#" class="pc_ban">
+                        <img src="002.jpg" alt="메인배너">
+                    </a>
+                    <a href="#" class="mo_ban"><img
+                        src="https://www.leeumstore.org/wib/img/banner/m_main_banner.jpg"
+                        alt="메인배너"></a>
+                </div>
+
+                <!--// 아티스트 -->
+                <div id="artist_main">
+                    <p class="big_txt">ARTIST</p>
+                    <div id="artist_container">
+                        <div class="artist_img">
+                            <img
+                                src="https://www.leeumstore.org/web/product/medium/202302/f9405a499d8170144b974203c60f7592.jpg"
+                                alt="승효상">
+                            <span>승효상 Seung, H-sang</span>
+                        </div>
+                        <div class="artist_img">
+                            <img
+                                src="https://www.leeumstore.org/web/product/medium/202302/5be262ed1b37e228a068c4a53c91cc01.jpg"
+                                alt="현태주 Hyun, Taeju">
+                            <span>현태주 Hyun, Taeju</span>
+                        </div>
+
+                        <div class="artist_img">
+                            <img
+                                src="https://www.leeumstore.org/web/product/medium/202210/30e9c31101d5252c20c7c790c2f00637.jpg"
+                                alt="이능호 Lee, Neungho">
+                            <span>이능호 Lee, Neungho</span>
+                        </div>
+                        <div class="artist_img">
+                            <img
+                                src="https://www.leeumstore.org/web/product/medium/202208/71112bee7666e6f9459a3ef95bd3bd8f.jpg"
+                                alt="김승현 Kim, Sunghyon">
+                            <span>김승현 Kim, Sunghyon</span>
+                        </div>
+                        <div class="artist_img">
+                            <img
+                                src="https://www.leeumstore.org/web/product/medium/202208/dbcb0de6f5e6b6af4c9a18efd4c528ed.jpg"
+                                alt="심보근 Sim, Bogeun">
+                            <span>심보근 Sim, Bogeun</span>
+                        </div>
+                        <div class="artist_img">
+                            <img
+                                src="https://www.leeumstore.org/web/product/medium/202208/201dc7233b838aaa74121606dd75ba9b.jpg"
+                                alt="김병호 Kim, Byoungho">
+                            <span>김병호 Kim, Byoungho</span>
+                        </div>
+                    </div>
+
+                    <div class="more_btn">
+                        <a href="/product/artist_list.html?cate_no=43">
+                            <span>SEE MORE</span></a>
+                    </div>
+                </div>
+
+                <!-- 세라믹 -->
+                <div class="product_main">
+                    <p class="big_txt">CERAMIC</p>
+                    <!-- Swiper -->
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img
+                                src="https://www.leeumstore.org/web/product/medium/202209/c94d36bc55c145bd8767b6c2bf5850d9.jpg"
+                                alt="꽃 찬기 세트 Flower Dish Set (오동나무 패키지 포함)"></div>
+                            <div class="swiper-slide"><img
+                                src="https://www.leeumstore.org/web/product/medium/202209/cbaa181bbfcad7af6e0e33e491a9126a.jpg"
+                                alt="술잔 세트 Goblet Set (오동나무 패키지 포함) (품절)"></div>
+                            <div class="swiper-slide"><img
+                                src="https://www.leeumstore.org/web/product/medium/202209/4cb6554583d8fb25d521fb4b8b7d0937.jpg"
+                                alt="다관 세트 Teapot Set (오동나무 패키지 포함)"></div>
+                            <div class="swiper-slide"><img
+                                src="https://www.leeumstore.org/web/product/medium/202203/1f344167f0928f704c73696e970a047e.jpg"
+                                alt="방울굽 다관(후파형)"></div>
+                            <div class="swiper-slide"><img
+                                src="https://www.leeumstore.org/web/product/medium/202203/cb914ec1f29da8bfd17a286a5c51b874.jpg"
+                                alt="강낭콩굽 다관"></div>
+                            <div class="swiper-slide"><img
+                                src="https://www.leeumstore.org/web/product/medium/202203/6459ac5b1a71056e26c0385c479968f9.jpg"
+                                alt="방울굽 다관(상파형)"></div>
+                            <div class="swiper-slide"><img
+                                src="https://www.leeumstore.org/web/product/medium/202201/cf7cf97a539a2f6521bae2fb355bbf73.jpg"
+                                alt="인센스 홀더 원형 (소) Circular Incense Holder (품절)"></div>
+                            <div class="swiper-slide"><img
+                                src="https://www.leeumstore.org/web/product/medium/202111/f8be0047b648e31e79a529493b5db83b.jpg"
+                                alt="팔각 마름모제기 Octagonal Heeled Dish (품절)"></div>
+                            <div class="swiper-slide"><img
+                                src="https://www.leeumstore.org/web/product/medium/202104/c11d245059e1604eed8e5952520bbecc.jpg"
+                                alt="국화찬기 Twelve Petals Dish"></div>
+                            <div class="swiper-slide"><img
+                                src="https://www.leeumstore.org/web/product/medium/202104/1a66a80ce9285020c16abd1f50391a59.jpg"
+                                alt="한손물컵 Long Cup 130ml"></div>
+                            <div class="swiper-slide"><img
+                                src="https://www.leeumstore.org/web/product/medium/202104/df50cc6ca1bbd2ca585abc0761345dd2.jpg"
+                                alt="날개손잡이컵 Long Cup (Wing Handle) 130ml (품절)"></div>
+                            <div class="swiper-slide"><img
+                                src="https://www.leeumstore.org/web/product/medium/202104/5d21949b5c17c8f34013ca7d00d6586c.jpg"
+                                alt="머그 대 링 Mug Cup (Water Drop Ring Handle) 280ml"></div>
+
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+
+                <div class="product_main">
+                    <p class="big_txt">GLASS</p>
+                    <!-- Swiper -->
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img
+                                src="https://www.leeumstore.org/web/product/small/202202/0f65cc37c3df7df1fbfda18ec4a8a9c8.jpg"
+                                alt="주병세트(잔2개) A Bottle And Two Glasses"></div>
+                            <div class="swiper-slide"><img
+                                src="https://www.leeumstore.org/web/product/medium/202301/00162d88670f1b08f5a6b3cfee70a606.jpg"
+                                alt="막잔 스몰 Glass S"></div>
+                            <div class="swiper-slide"><img
+                                src="https://www.leeumstore.org/web/product/medium/202112/316a37267198addb3b9e0685a48e3fcd.jpg"
+                                alt="주기세트 (잔2개) A Bottle And Two Glasses"></div>
+                            <div class="swiper-slide"><img
+                                src="https://www.leeumstore.org/web/product/medium/202301/458b4b05814943b386488d3cecf07f16.jpg"
+                                alt="잔 Glass"></div>
+                            <div class="swiper-slide"><img
+                                src="https://www.leeumstore.org/web/product/medium/202202/9b077c5a236953c7c711ef14caabd870.jpg "
+                                alt="막잔 Glass (품절)"></div>
+                            <div class="swiper-slide"><img
+                                src="https://www.leeumstore.org/web/product/medium/202104/1495d2b3fe440e3993a000f731ce11f8.jpg"
+                                alt="큰잔 1 Glass 1"></div>
+                            <div class="swiper-slide"><img
+                                src="https://www.leeumstore.org/web/product/medium/202206/6c60ba03242dc0f44afb3e4bc7a07f1e.jpg"
+                                alt="큰잔 2 Glass 2 (품절)"></div>
+                            <div class="swiper-slide"><img
+                                src="https://www.leeumstore.org/web/product/medium/202208/a75272ee02612497ad1325da736b46a4.jpg"
+                                alt="밥그릇 Rice Bowl (품절)"></div>
+                            <div class="swiper-slide"><img
+                                src="https://www.leeumstore.org/web/product/medium/202208/b3873ba8425ecaa8a0633256c1904d27.jpg"
+                                alt="국그릇 Soup Bowl"></div>
+                            <div class="swiper-slide"><img
+                                src="https://www.leeumstore.org/web/product/medium/202104/627adfdab582138dcd98abb0c03d4323.jpg"
+                                alt="볼 Bowl"></div>
+
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+
+                <div class="product_main">
+                    <p class="big_txt">METAL</p>
+                    <!-- Swiper -->
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img
+                                src="https://www.leeumstore.org/web/product/medium/202103/c0d89a9b60120b070594c673c564e465.jpg"
+                                alt="테이프 디스펜서 2T-14S"></div>
+                            <div class="swiper-slide"><img
+                                src="https://www.leeumstore.org/web/product/medium/202103/91bc0dff491ed18aa218287ca1d8e8ab.jpg"
+                                alt="손잡이 직삼각자 2T-SH"></div>
+                            <div class="swiper-slide"><img
+                                src="https://www.leeumstore.org/web/product/medium/202206/97cdefdabcd38e5e4e407176cf3d2baa.jpg"
+                                alt="손잡이 자 2T-RH (품절)"></div>
+                            <div class="swiper-slide"><img
+                                src="https://www.leeumstore.org/web/product/medium/202103/bca4f48983812efbfed5f123086304f3.jpg"
+                                alt="손잡이 180도 각도기 2T-PH"></div>
+                            <div class="swiper-slide"><img
+                                src="https://www.leeumstore.org/web/product/medium/202104/c1f4acb88de3f2c7e43681318aa56f06.jpg"
+                                alt="바인더 집게 Midium 2T-BCM (품절)"></div>
+
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+
+                <div class="product_main">
+                    <p class="big_txt">PAPER</p>
+                    <!-- Swiper -->
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img
+                                src="https://www.leeumstore.org/web/product/medium/202111/ef8e125977679394e6012e7b44e52fa8.jpg"
+                                alt="야금(冶金): 위대한 지혜 도록 Metallurgy: Great Wisdom"></div>
+                            <div class="swiper-slide"><img
+                                src="https://www.leeumstore.org/web/product/medium/202105/1ab3aa1025ec1bc9b5c71e48d6c27904.jpg"
+                                alt="소리 모양 Sori Moyang"></div>
+                            <div class="swiper-slide"><img
+                                src="https://www.leeumstore.org/web/product/medium/202104/69e345e86cef5b0f2a173753f6e6e88e.jpg"
+                                alt="스몰 뎁 딥 그린 Small Dept Deep Green"></div>
+                            <div class="swiper-slide"><img
+                                src="https://www.leeumstore.org/web/product/medium/202104/ffb6d90a227732c2965bd6fe676c4185.jpg"
+                                alt="스몰 뎁 레드 브릭 Small Dept Red Brick"></div>
+                            <div class="swiper-slide"><img
+                                src="https://www.leeumstore.org/web/product/medium/202104/83471ede23dca77ef31b18af88b53b2b.jpg"
+                                alt="라벨 스티키 페이퍼 B타입 Label Sticky Paper B type"></div>
+
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+
+                <div class="product_main">
+                    <p class="big_txt">FABRIC</p>
+                    <!-- Swiper -->
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img
+                                src="https://www.leeumstore.org/web/product/medium/202105/9e83c4dbe4357edc9737127d65bceba7.jpg"
+                                alt="백운 : 바구니 보 Bojagi (Cloud)"></div>
+                            <div class="swiper-slide"><img
+                                src="https://www.leeumstore.org/web/product/medium/202106/8a8a206ddab84fb9530216aaf15e3cfb.jpg"
+                                alt="명월 : 바구니 함 Tea Container (Moon)"></div>
+                            <div class="swiper-slide"><img
+                                src="https://www.leeumstore.org/web/product/medium/202106/94181871585cb85fb8ff8bf91d17ab6d.jpg"
+                                alt="죽림 : 바구니 함 Tea Container (Forest)"></div>
+
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+        <footer>
+            <ul class="footer_ul">
+                <li>
+                    <a href="/myshop/order/list.html">
+                        <span>GUEST ORDER</span></a>
+                </li>
+                <li>
+                    <a href="/board/faq/list.html?board_no=3">
+                        <span>FAQ</span></a>
+                </li>
+                <li>
+                    <a href="/member/mall_agreement.html">이용약관</a>
+                </li>
+                <li>
+                    <a href="/shopinfo/guide.html">이용안내</a>
+                </li>
+                <li>
+                    <a href="/member/privacy.html">
+                        <b>개인정보처리방침</b>
+                    </a>
+                </li>
+                <li>
+                    <a href="/board/free/list.html?board_no=1">공지사항</a>
+                </li>
+            </ul>
+            <div class="f_info">
+                <p>
+                    <span>삼성문화재단</span>
+                    <span>대표자명 : 유문형</span>
+                    <span>사업자등록번호 : 110-82-05953
+                        <a
+                            href="#none"
+                            onclick="window.open('http://www.ftc.go.kr/bizCommPop.do?wrkr_no=1108205953', 'bizCommPop', 'width=750, height=950;');return false;">[사업자정보확인]</a>
+                    </span>
+                </p>
+                <p>
+                    <span>전화번호 : 02-2014-6754</span>
+                    <span>통신판매업신고번호 : 제2021-서울용산-0616호</span></p>
+                <p>
+                    <span>서울특별시 용산구 이태원로55길 60-16 (한남동)
+                    </span>
+                </p>
+
+            </div>
+            <div class="f_sns">
+                <ul class="inline">
+                    <li>
+                        <a href="#" target="_blank"><img src="https://www.leeumstore.org/wib/img/icon/icon_sns_f.svg" alt="페이스북"></a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank"><img src="https://www.leeumstore.org/wib/img/icon/icon_sns_i.svg" alt="인스타그램"></a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank"><img src="https://www.leeumstore.org/wib/img/icon/icon_sns_y.svg" alt="유튜브"></a>
+                    </li>
+                </ul>
+                <p>©SAMSUNG FOUNDATION OF CULTURE</p>
+            </div>
+        </footer>
+
+        <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+        <!-- Initialize Swiper -->
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+                loop: true,
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev"
+                },
+            });
+        </script>
+        <script src="./script.js"></script>
+    </body>
+</html>
